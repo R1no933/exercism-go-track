@@ -1,6 +1,9 @@
 package pangram
 
-import "strings"
+import (
+	"errors"
+	"strings"
+)
 
 func IsPangram(input string) bool {
 	inToLower := strings.ToLower(input)
